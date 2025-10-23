@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title if title else "Insurance Management" }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">INSURE<span>PRO</span></h1>
+    <div class="nav-links">
+      <a href="/">Dashboard</a>
+      <a href="/add_customer">Customers</a>
+      <a href="/add_policy">Policies</a>
+      <a href="/assign_policy">Assign</a>
+      <a href="/add_claims">Claims</a>
+      <a href="/add_payment">Payments</a>
+    </div>
+  </nav>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <p>© 2025 InsurePro Systems | Minimal & Secure</p>
+  </footer>
+</body>
+</html>

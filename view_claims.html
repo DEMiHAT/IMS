@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>Claims Dashboard</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Claim ID</th>
+                <th>Customer</th>
+                <th>Policy</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for claim in claims %}
+            <tr>
+                <td>{{ claim.claim_id }}</td>
+                <td>{{ claim.customer_name }}</td>
+                <td>{{ claim.policy_name }}</td>
+                <td>{{ claim.claim_amount }}</td>
+                <td>{{ claim.claim_date }}</td>
+                <td>{{ claim.status }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

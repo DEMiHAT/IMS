@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Assign Policy</title>
+</head>
+<body>
+    <h2>Assign Policy to Customer</h2>
+    <form method="POST">
+        Customer ID: <input type="number" name="customer_id" required><br><br>
+        Policy ID: <input type="number" name="policy_id" required><br><br>
+        Start Date: <input type="date" name="start_date" required><br><br>
+        End Date: <input type="date" name="end_date" required><br><br>
+        <input type="submit" value="Assign Policy">
+    </form>
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <h2>Add Claim</h2>
+  <form method="POST">
+    <label for="customer_policy_id">Select Customer Policy:</label>
+    <select id="customer_policy_id" name="customer_policy_id" required>
+      {% if customer_policies %}
+        {% for cp in customer_policies %}
+          <option value="{{ cp.customer_policy_id }}">
+            {{ cp.customer_name }} — {{ cp.policy_name }}
+          </option>
+        {% endfor %}
+      {% else %}
+        <option disabled>No active policies found</option>
+      {% endif %}
+    </select>
+    <br><br>
+
+    <label for="claim_amount">Claim Amount:</label>
+    <input type="number" id="claim_amount" name="claim_amount" min="1000" step="100" required>
+    <br><br>
+
+    <label for="claim_date">Claim Date:</label>
+    <input type="date" id="claim_date" name="claim_date" required>
+    <br><br>
+
+    <label for="reason">Reason:</label>
+    <textarea id="reason" name="reason" placeholder="Enter claim reason" required></textarea>
+    <br><br>
+
+    <button type="submit">Submit Claim</button>
+  </form>
+</div>
+{% endblock %}

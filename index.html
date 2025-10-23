@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container homepage">
+    <h2 class="page-title">Welcome to InsurePro</h2>
+    <p style="text-align:center; color:#555;">Your elite and minimal Insurance Management System</p>
+
+    <div class="card-grid">
+        <a href="/add_customer" class="card">
+            <h3>Add Customer</h3>
+            <p>Register new customers.</p>
+        </a>
+        <a href="/add_policy" class="card">
+            <h3>Add Policy</h3>
+            <p>Create new insurance policies.</p>
+        </a>
+        <a href="/assign_policy" class="card">
+            <h3>Assign Policy</h3>
+            <p>Link policies to customers.</p>
+        </a>
+        <a href="/add_payment" class="card">
+            <h3>Payments</h3>
+            <p>Record customer premium payments.</p>
+        </a>
+        <a href="/add_claims" class="card">
+            <h3>Claims</h3>
+            <p>Register insurance claims.</p>
+        </a>
+        <a href="/view_claims" class="card">
+            <h3>View Claims</h3>
+            <p>Track claim statuses.</p>
+        </a>
+    </div>
+</div>
+{% endblock %}

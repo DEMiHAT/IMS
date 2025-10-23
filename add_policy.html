@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Add Policy</title>
+</head>
+<body>
+    <h2>Add New Policy</h2>
+    <form method="POST">
+        Policy Type: <input type="text" name="policy_type" required><br><br>
+        Coverage Amount: <input type="number" step="0.01" name="coverage_amount" required><br><br>
+        Premium Amount: <input type="number" step="0.01" name="premium_amount" required><br><br>
+        Term (years): <input type="number" name="term_years" required><br><br>
+        <input type="submit" value="Add Policy">
+    </form>
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>
