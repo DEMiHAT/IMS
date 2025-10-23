@@ -62,8 +62,8 @@ You will need the following software installed on your system:
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
-    cd your-repository-name
+    git clone [https://github.com/DEMiHAT/IMS.git](https://github.com/DEMiHAT/IMS.git)
+    cd IMS
     ```
 
 2.  **Create and activate a virtual environment:**
