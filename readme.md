@@ -1,5 +1,3 @@
-Here is a professional README.md file generated for your project, based on the files and database structure you provided.
-You can copy and paste the text below into a new file named README.md in your project's root directory.
 # Insurance Management System
 
 A web-based application built with Python, Flask, and MySQL to manage customers, policies, claims, and payments for an insurance company.
